@@ -7,10 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 
 public class Dashboard extends AppCompatActivity {
-
     private FloatingActionButton addtask;
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,7 +16,6 @@ public class Dashboard extends AppCompatActivity {
         setTitle("Dashboard");
 
         //setting onclicklistener for my add task button
-
         addtask = (FloatingActionButton) findViewById(R.id.addtask);
         addtask.setOnClickListener(new View.OnClickListener() {
             @Override

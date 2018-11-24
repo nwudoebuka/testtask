@@ -15,11 +15,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         StartAnimations();
-
     }
-
 
     private void StartAnimations() {
         Animation anim = AnimationUtils.loadAnimation(this, R.anim.alpha);
@@ -42,6 +39,5 @@ public class MainActivity extends AppCompatActivity {
 
             }
         }, secondsDelayed * 3000);
-
     }
 }
