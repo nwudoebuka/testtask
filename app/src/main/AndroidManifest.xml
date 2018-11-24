@@ -17,7 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".Dashboard" />
-        <activity android:name=".Addtask"></activity>
+        <activity android:name=".Addtask" />
+        <activity android:name=".Editassignment"></activity>
     </application>
 
 </manifest>
