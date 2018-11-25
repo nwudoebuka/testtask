@@ -5,11 +5,8 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.view.Menu;
-import android.view.MenuItem;
 
 import java.util.ArrayList;
 
@@ -59,7 +56,7 @@ public class Dashboard extends AppCompatActivity {
         addtask.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(Dashboard.this, Addtask.class));
+                startActivity(new Intent(Dashboard.this, AddTaskActivity.class));
             }
         });
 

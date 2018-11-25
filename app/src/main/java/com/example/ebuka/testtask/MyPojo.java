@@ -1,7 +1,6 @@
 package com.example.ebuka.testtask;
 
 public class MyPojo {
-
     String title;
     String desc;
     String hours;

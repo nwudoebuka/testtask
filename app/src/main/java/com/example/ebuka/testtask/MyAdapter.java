@@ -1,7 +1,6 @@
 package com.example.ebuka.testtask;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -68,7 +67,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
                 //imageView.setImageResource(R.drawable.heart_red);
 
                 //moves to the activity where the user edits the asignment
-                view.getContext().startActivity(new Intent(view.getContext(),Editassignment.class));
+                view.getContext().startActivity(new Intent(view.getContext(),EditTaskActivity.class));
 
             }
         });

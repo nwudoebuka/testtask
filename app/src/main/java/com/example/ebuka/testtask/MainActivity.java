@@ -41,3 +41,29 @@ public class MainActivity extends AppCompatActivity {
         }, secondsDelayed * 3000);
     }
 }
+
+/*
+
+      NotificationDAO notificationDAO = AppDatabase.getInstance(getBaseContext()).getNotificationDAO();
+        notificationAdapter.swapItems(notificationDAO.getNotificationsInDateOrder());
+
+
+//        new Thread(new Runnable() {
+//            @Override
+//            public void run() {
+//
+//                NotificationDAO notificationDAO = AppDatabase.getInstance(getBaseContext()).getNotificationDAO();
+//                Notification notification = new Notification(NotificationType.TYPE_BACKEND);
+//                notification.setDate(new Date());
+//                notification.setMessage("Message");
+//                notification.setTitle("Welcome to money BAg");
+//                notification.setUnRead(true);
+//                notificationDAO.insert(notification);
+//
+//
+//                notificationAdapter.swapItems(notificationDAO.getNotificationsInDateOrder());
+//            }
+//        }).start();
+
+
+*/
