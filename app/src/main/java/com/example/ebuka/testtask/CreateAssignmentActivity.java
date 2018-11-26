@@ -6,14 +6,14 @@ import android.os.Bundle;
 import butterknife.ButterKnife;
 import butterknife.Unbinder;
 
-public class AddTaskActivity extends AppCompatActivity {
-    private static final String TAG = AddTaskActivity.class.getSimpleName();
+public class CreateAssignmentActivity extends AppCompatActivity {
+    private static final String TAG = CreateAssignmentActivity.class.getSimpleName();
     private Unbinder unbinder;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_add_task);
+        setContentView(R.layout.activity_create_assignment);
         //setTitle("Add Task");
         unbinder = ButterKnife.bind(this);
     }
