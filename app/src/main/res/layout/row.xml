@@ -1,38 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:padding="3dp"
-    android:layout_height="120dp">
+    android:layout_height="wrap_content"
+    android:padding="3dp">
 
     <TextView
+        android:id="@+id/weekEndingDate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Large Text"
-        android:padding="2dp"
-        android:id="@+id/title" android:layout_alignParentTop="true" android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"/>
+        tool:text="weekEndingDate"
+        android:padding="2dp" />
+
     <TextView
+        android:id="@+id/employer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="Small Text"
-        android:padding="2dp"
-        android:id="@+id/desc" android:layout_below="@+id/title" android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"/>
+        tool:text="employer"
+        android:padding="2dp" />
+
     <TextView
+        android:id="@+id/workSite"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="hours"
-        android:padding="2dp"
-        android:id="@+id/hours" android:layout_below="@+id/desc" android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"/>
-    <ImageView
+        tool:text="workSite"
+        android:padding="2dp" />
+
+    <TextView
+        android:id="@+id/totalHoursWorkedPerWeek"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:padding="3dp"
-        android:id="@+id/imageView" android:layout_alignParentTop="true" android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"/>
-</RelativeLayout>
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        tool:text="totalHoursWorkedPerWeek"
+        android:padding="2dp" />
+
+</LinearLayout>
