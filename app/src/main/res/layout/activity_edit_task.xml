@@ -16,15 +16,6 @@
             android:focusableInTouchMode="true"
             android:orientation="vertical">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:textColor="#000000"
-                android:textSize="24sp"
-                android:gravity="center"
-                android:text="Add a task" />
-
             <!--<android.support.design.widget.TextInputLayout-->
             <!--android:layout_height="wrap_content" android:layout_width="fill_parent">-->
 

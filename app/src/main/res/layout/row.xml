@@ -3,15 +3,8 @@
     xmlns:tool="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:orientation="vertical"
     android:padding="3dp">
-
-    <TextView
-        android:id="@+id/weekEndingDate"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        tool:text="weekEndingDate"
-        android:padding="2dp" />
 
     <TextView
         android:id="@+id/employer"
@@ -26,7 +19,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceSmall"
-        tool:text="workSite"
+        tool:text="Location"
         android:padding="2dp" />
 
     <TextView
@@ -34,7 +27,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceSmall"
-        tool:text="totalHoursWorkedPerWeek"
+        tool:text="120 hours"
+        android:padding="2dp" />
+
+    <TextView
+        android:id="@+id/weekEndingDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        tool:text="20th Dec"
         android:padding="2dp" />
 
 </LinearLayout>
