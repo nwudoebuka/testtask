@@ -25,7 +25,6 @@ public class MainActivity extends AppCompatActivity implements OnAssignmentClick
     private static final String TAG = MainActivity.class.getSimpleName();
     private Unbinder unbinder;
 
-    @BindView(R.id.toolbar) Toolbar toolbar;
     @BindView(R.id.recycler_view) RecyclerView recyclerView;
     @BindView(R.id.fab) FloatingActionButton fab;
 
@@ -34,31 +33,10 @@ public class MainActivity extends AppCompatActivity implements OnAssignmentClick
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         unbinder = ButterKnife.bind(this);
-        setSupportActionBar(toolbar);
-
-        //NotificationDAO notificationDAO = AppDatabase.getInstance(getBaseContext()).getNotificationDAO();
-        //notificationAdapter.swapItems(notificationDAO.getNotificationsInDateOrder());
-
-//        new Thread(new Runnable() {
-//            @Override
-//            public void run() {
-//
-//                NotificationDAO notificationDAO = AppDatabase.getInstance(getBaseContext()).getNotificationDAO();
-//                Notification notification = new Notification(NotificationType.TYPE_BACKEND);
-//                notification.setDate(new Date());
-//                notification.setMessage("Message");
-//                notification.setTitle("Welcome to money BAg");
-//                notification.setUnRead(true);
-//                notificationDAO.insert(notification);
-//
-//
-//                notificationAdapter.swapItems(notificationDAO.getNotificationsInDateOrder());
-//            }
-//        }).start();
 
         List<Assignment> assignments = new ArrayList<>();
         for(int i = 0; i < 4; i++) {
-            Assignment assignment = new Assignment("", "", "", "");
+            Assignment assignment = new Assignment("28-12-2018", "Ebuka", "Ikeja", "12hrs");
             assignments.add(assignment);
         }
 
@@ -92,28 +70,5 @@ public class MainActivity extends AppCompatActivity implements OnAssignmentClick
         super.onDestroy();
         unbinder.unbind();
     }
-
-//    private void StartAnimations() {
-//        Animation anim = AnimationUtils.loadAnimation(this, R.anim.alpha);
-//        anim.reset();
-//        LinearLayout l=(LinearLayout) findViewById(R.id.lin_lay);
-//        l.clearAnimation();
-//        l.startAnimation(anim);
-//
-//        anim = AnimationUtils.loadAnimation(this, R.anim.translate);
-//        anim.reset();
-//        ImageView iv = (ImageView) findViewById(R.id.splashlogo);
-//        iv.clearAnimation();
-//        iv.startAnimation(anim);
-//        int secondsDelayed = 3;
-//        new Handler().postDelayed(new Runnable() {
-//            public void run() {
-//                finish();
-//                startActivity(new Intent(MainActivity.this, Dashboard.class));
-//                overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
-//
-//            }
-//        }, secondsDelayed * 3000);
-//    }
 
 }
